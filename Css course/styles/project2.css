@@ -1,0 +1,148 @@
+html{
+    box-sizing: border-box;
+    width:  100%;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    
+}
+
+body{
+    background-color: #080710;
+    font-family: "poppins";
+    width: 100%;
+    /* for centering the content */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+input,button{
+    font-family: inherit;
+    border: none;
+    outline: none;
+
+}
+
+.container{
+    margin: auto 0;
+    position: relative;}
+
+
+.login_form{
+    
+    width: 400px;
+    height: 450px;
+
+    /* padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 35px; */
+    padding: 50px 35px 35px 35px;
+
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.13);
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(40px);
+    /* -webkit-backdrop-filter: blur(40px);   */
+    box-shadow: 0px 0px  10px -4px white;
+    
+    
+}
+
+.form__input{
+    background-color: rgba(255,255,255,0.07);
+    height: 50px;
+    width: 100%;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+    border-style: none;
+    border-radius: 5px;
+    color: white;   
+}
+
+p{
+    height: 15px;
+}
+
+
+.form__title{
+    color: white;
+    display: flex;
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.login-text{
+    margin: auto;
+}
+
+.form__label{
+    color: white;
+    font-size: 16px;
+
+}
+
+
+.submit-button{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 15px 0px;
+    box-shadow: 0 0 10px -4px rgb(91, 91, 91);
+    text-align: center;
+
+}
+.button-text{
+    font-size: 18px; 
+    font-family: "poppins";
+
+}
+
+
+input::placeholder{
+    color: #e5e5e5;
+}
+
+.green_circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom right,#006d58,#7fffea);
+    position:absolute;
+    right:75%;
+    bottom: 75%;
+    z-index: -1;
+
+}
+
+.blue_circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: linear-gradient(to top left,#0e1454,#82d5fe);
+    position:absolute;
+    left: 75%;
+    top: 75%;
+    z-index: -1;
+    
+}
+
+.form__input:hover{
+    box-shadow: 0px 0px 10px -4px white;
+}
+
+
+
+.submit-button:hover{
+    box-shadow: 0px 0px 10px -4px white;
+
+}

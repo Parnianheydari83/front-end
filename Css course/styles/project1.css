@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Shabnam-FD";
+    src: url("../fonts/Shabnam-FD.woff2") format("woff2");
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+
+}
+
+
+
+body{
+    background-color: rgb(240, 240, 240);
+    font-family: "Shabnam-FD";
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin-top: 56px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+.product{
+    margin-top: 15px;
+    
+    background-color: white;
+    height: 380px;
+    width: 260px;
+    box-shadow: 0px 0px 20px  rgb(105, 105, 105);
+    border-radius: 10px;
+    padding: 20px;
+    
+    
+}
+.section-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+
+.product_image{
+    width: 100%;
+    
+}
+
+.title{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+}
+.icon{
+    width: 25px;
+    scale: 100%;
+    margin: 5px;
+}
+
+.showmore{
+   
+    justify-content: flex-end; 
+}
+
+.pic-description{
+    margin-right: 10px;
+    font-size: 14px;
+
+}
+
+.off-precent{
+   
+    width: 35px;
+    background-color: rgb(180, 180, 252);
+    color: blue;
+    border-radius: 5px;
+
+}
+.price{
+    margin-top: 30px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.pic-description{
+    color: black;
+    text-wrap: wraped;
+   
+}
+.final-price{
+    margin-right: 10px;
+    margin-top: 3px;
+
+
+}
