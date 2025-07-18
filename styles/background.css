@@ -1,0 +1,18 @@
+body{
+    font-family: tahoma;
+    font-size: 26px;
+}
+
+.mybg{
+    width: 800px;
+    height: 800px;
+    /* background-image: url("../images/system.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
+    /* shorthand */
+    background: url("../images/system.jpg") no-repeat fixed center;
+
+
+}

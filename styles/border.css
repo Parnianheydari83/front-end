@@ -1,0 +1,14 @@
+h1{
+    /* border-width: 2px;
+    border-style: dotted;
+    border-color: red; */
+    /* shorthand */
+    /* border: 2px dotted red;
+    border-right-color: blue; */
+    background-color: blueviolet;
+    color: white;
+    border-right: 2px solid blue;
+    border-radius: 7px;
+
+
+}
