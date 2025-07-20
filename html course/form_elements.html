@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                font-family: tahoma ;
+                font-size: 24px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <label for="selectbox1">My Options</label>
+            <br>
+            <select name="selectbox-data" id="selectbox" size="5">
+                <option value="html5">html5</option>
+                <option value="css" selected>CSS</option>
+                <option value="js">JS</option>
+                <option value="vuejs">vue js</option>
+                <option value="html5">html5</option>
+                <option value="css" >CSS</option>
+                <option value="js">JS</option>
+                <option value="vuejs">vue js</option>
+                <option value="html5">html5</option>
+                <option value="css" >CSS</option>
+                <option value="js">JS</option>
+                <option value="vuejs">vue js</option>
+                <option value="html5">html5</option>
+                <option value="css" >CSS</option>
+                <option value="js">JS</option>
+                <option value="vuejs">vue js</option>
+            </select>
+            <br>
+            <!-- if the text is more than 30 ccharacter it goes to next line , more than 10 rows it gets scroll   -->
+            <textarea cols="30" rows="10"></textarea>
+            <br>
+            <button type="submit">click me</button>
+
+        <br>
+        <!-- fieldset -->
+        <fieldset>
+            <legend>personal information</legend>
+            <div>
+                <label>first name</label>
+                <input type="text">
+            </div>
+            
+            <div>
+                <label>last name</label>
+                <input type="text">
+            </div>
+
+            <h3>gender</h3>
+            
+            <div>
+                <input type="radio" value="male">
+                <label>male</label>
+                
+            </div>
+
+            <div>
+                <input type="radio" value="female">
+                <label >female</label >
+                
+            </div>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>skills that you have</legend>
+            
+            <h3>skills</h3>
+            <div>
+                <input type="checkbox">
+                <label>html5</label>
+            </div>
+                        <div>
+                <input type="checkbox">
+                <label>Css</label>
+            </div>
+                        <div>
+                <input type="checkbox">
+                <label>python</label>
+            </div>
+
+
+        </fieldset>
+        
+        <!-- datalist -->
+        <h3>choose your programming language:</h3>
+        <input type="text" list="my data">
+        <datalist id="my data">
+            <option >html</option>
+            <option >css</option>
+            <option >js</option>
+            <option >python</option>
+
+
+        </datalist>
+            
+
+        </form>
+
+    </body>
+</html>

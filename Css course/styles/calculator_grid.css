@@ -1,0 +1,180 @@
+html{
+    box-sizing: border-box;
+    width:  100%;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+
+    font: inherit;
+    margin: 0;
+    
+}
+body{
+    height: 100vh;
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B2DAFF;
+    font-family: "poppins";
+}
+button{
+    border: none;
+    outline: none;
+    color: none;
+    background: none;
+}
+.background_circle{
+    position: absolute;
+    background-color: #109DFF;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+    z-index: -1;
+
+}
+.container{
+    
+    width: 375px;
+    height: 812px;
+    border-radius: 39px;
+    background-color: #17181A;
+    
+    
+
+}
+.calculation__resault{
+    color: #ffff;
+    font-size: 48px;
+    font-family: "poppins";
+    height: auto;
+    text-align: start;
+    /* position: relative; */
+
+    margin-left: 180px;   
+}
+
+.calculation__showing{
+    color: #818181;
+    height: auto;
+    font-size: 24px;
+    text-align: top;
+    /* position: relative; */
+    margin-top: 138px;
+    margin-left: 167px;
+
+}
+.calculation__operators{
+    color: #109DFF;
+}
+.top__buttons__container{
+    margin-top: 100px;
+  
+}
+.top__buttons{
+    display: flex;
+    background-color: #303136;
+    
+    color: #29A8FF;
+    width: 62px;
+    height: 40px;
+    padding: 4px 6px 4px 6px;
+    border-radius: 24px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
+}
+.rows_container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.second_row__buttons{
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 4px 6px 4px 6px;
+    font-size: 32px; 
+   
+}
+
+.star_button{
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+    align-items: center;
+    text-align: center;
+ 
+    justify-content: center;
+    padding: 4px 6px 4px 6px;
+    font-size: 32px;
+    margin-top: 20px;
+    align-content: center;
+}
+
+.blue_buttons{
+    background-color: #005DB2;
+    color: #5AA2E0;
+}
+.gray_buttons{
+    background-color: #616161;
+    color: #A5A5A5;
+}
+.numbers{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-auto-rows: 62px;
+}
+.numbers_style{
+    background-color: #303136;
+    color:#29A8FF;
+
+}
+
+span button{
+    width: 62px;
+    height: 62px;
+    display: grid;
+
+}
+
+.plus_button{
+    height: 96px;
+    grid-row: span 2;
+    margin-top: 35px;
+
+}
+
+.zero_button{
+    grid-column: span 2;
+    width: auto;
+}
+.equal_button{
+    height: 83px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: #1991FF;
+    color: #B2DAFF;
+}
+button:not(.blue_buttons):not(.equal_button):hover{
+    background-color: #505258;
+
+}
+.blue_buttons:hover{
+    background-color: #0076e4;
+}
+.equal_button:hover{
+    background-color: #136cbe;;
+}

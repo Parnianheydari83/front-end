@@ -1,0 +1,53 @@
+/* element */
+h3{
+    color: red;
+}
+/* id */
+
+#mytext{
+    color: blue;
+
+}
+
+/* class  */
+p.caption{
+    color: blueviolet;
+}
+.caption{
+    color: yellow;
+}
+
+/* all elements */
+*{
+
+}
+
+/* grouping */
+h1,h2{
+    color :green
+}
+
+/* element element */
+.main .content-1{
+    background-color: blue;
+}
+/* element > element */
+.main >div {
+    border: 2px solid red;
+
+}
+
+/* element + element */
+h1 + p{
+    font-weight: bold;
+
+}
+/* element ~ element  */
+/* 
+h1 ~ p {
+    font-weight: bold;
+
+}
+
+
+*/
