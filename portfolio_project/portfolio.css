@@ -1,0 +1,121 @@
+html{
+    box-sizing: border-box;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+
+    font: inherit;
+    margin: 0;
+    
+}
+body{
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.container{
+    width: 1215px;
+    height:2070px ;
+  
+    margin: 64px 112px 64px 112px; 
+}
+
+.sections_style{
+    background-color: #1B1B1B;
+    border: 1px solid #262626;
+    border-radius: 48px;
+}
+.header_container{
+    display: flex;
+
+}
+
+.header_icon{
+    width: 64px;
+    height: 64px ;
+    border-radius: 100%;
+    padding: 12px;
+
+}
+.header_information_container{
+    height: 64px;
+    width: 1152px;
+    display: flex;
+    padding: 20px 66px 20px 66px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 369px;
+    font-size: 20px;
+    color: #fff;
+}
+.header_about{
+    height: 24px;
+    color: #4134F3;
+    font-weight: bold;
+}
+.profile_container{
+    height: 408.01px;
+    padding: 60px 42px 60px 42px;
+    margin-top: 20px;
+}
+.job_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.job_title{
+    color: #C0C0C0;
+    font-size: 24px;
+}
+.personal_information_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+  
+
+}
+.personal_info{
+   width: 300px;
+    text-wrap: wrapped;
+
+}
+.personal_info_name{
+    color: white;
+    font-size: 36px;
+    text-wrap: nowrap;
+    font-style: bold;
+}
+.personal_info_job{
+    display: block;
+    color: #C0C0C0;
+    margin-top: 28px;
+
+}
+.personal_info_buttons_container{
+    display: flex;
+    margin-top: 28px;
+}
+.personal_pic{
+    border-radius: 100%;
+    background-color: #2C2C2C;
+    width: 178px;
+    height: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
