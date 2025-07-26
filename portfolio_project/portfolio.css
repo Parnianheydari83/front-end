@@ -25,22 +25,27 @@ a{
     color: white;
 }
 
-
 .container{
-    width: 1215px;
-    height:2070px ;
-  
-    margin: 64px 112px 64px 112px; 
+    width: auto;
+    height:auto ;
+    margin: 64px 112px 64px 112px;
+
 }
 
 .sections_style{
     background-color: #1B1B1B;
     border: 1px solid #262626;
+    border-radius: 14px;
+}
+.header_style{
+    background-color: #1B1B1B;
+    border: 1px solid #262626;
     border-radius: 48px;
+
 }
 .header_container{
     display: flex;
-
+    align-items: center;
 }
 
 .header_icon{
@@ -51,8 +56,7 @@ a{
 
 }
 .header_information_container{
-    height: 64px;
-    width: 1152px;
+    width: 100%;
     display: flex;
     padding: 20px 66px 20px 66px;
     align-items: center;
@@ -61,10 +65,11 @@ a{
     font-size: 20px;
     color: #fff;
 }
-.header_about{
+.header_information_about{
     height: 24px;
     color: #4134F3;
     font-weight: bold;
+    align-content: center;
 }
 .profile_container{
     height: 408.01px;
@@ -89,8 +94,10 @@ a{
 
 }
 .personal_info{
-   width: 300px;
+    width: auto;
     text-wrap: wrapped;
+            display: flex;
+        flex-direction: column;
 
 }
 .personal_info_name{
@@ -108,6 +115,7 @@ a{
 .personal_info_buttons_container{
     display: flex;
     margin-top: 28px;
+    align-items: center;
 }
 .personal_pic{
     border-radius: 100%;
@@ -119,3 +127,337 @@ a{
     align-items: center;
 }
 
+.main_content_container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.projects_title_style{
+    font-size: 24px;
+    color: #fff;
+}
+
+.recent_work_section{
+    padding: 60px 40px 60px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recent_work_title{
+    color: #C0C0C0;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+
+}
+.recent_work_title_circle{
+    margin-right: 13px;
+
+}
+
+.recent_work_background_container{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 70px;
+    row-gap: 37px;
+
+}
+.recent_work_background_job{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.recent_work_background_active_job_title{
+    font-size: 24px;
+    color: #4134F3; 
+}
+.recent_work_background_job_title{
+    font-size: 24px;
+    color: #fff;
+
+}
+.recent_work_background_time{
+    font-size: 20px;
+    color: #C0C0C0;
+    margin-top: 12px;
+}
+
+.skills_and_project_container{
+    grid-row-start: span 2;
+    display: grid;
+    grid-template-columns: auto;
+    gap:20px
+
+}
+.skills_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
+}
+.skills_and_projects_best_skill{
+    position: relative;
+    font-size: 24px;
+    color: #C0C0C0;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 149px;
+}
+.skills_and_projects_best_skill::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(212deg, #4134F3 -55%, transparent 20%);
+    pointer-events: none;
+    z-index: 0;
+    border-radius: 14px ;
+}
+
+.skills_and_projects_other_skills{
+    font-size: 24px;
+    color: #C0C0C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:149px;
+    position: relative;
+
+}
+.skills_and_projects_other_skills::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: 
+    linear-gradient(212deg, #4134F3 -55%, transparent 20%) padding-box,
+    linear-gradient(270deg, #4134F3, transparent 1%) border-box;  
+    border-top-right-radius: 12px;
+    z-index: 0;
+    border-radius: 14px ;
+    border: 1px solid transparent;
+}
+
+
+
+.projects_ai_music{
+    padding: 41px 54px 41px 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+.projects_description_style{
+    font-size: 20px;
+    color: #C0C0C0;
+
+}
+.projects_title_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.projects_ai_music_pic_container{
+
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+.footer_container{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 46px 45px 46px;
+
+}
+
+.footer_title_left{
+    color: #fff;
+    font-size: 24px;
+
+}
+.footer_social_media_contact_container{
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+}
+.footer_twiter_contact_container{
+    color: #4134F3;
+
+}
+.copy_email_button{
+    width: 143px;
+    height:43px;
+}
+.hire_me_button{
+    width:116px;
+    height:50px;
+
+}
+.job_available_icon{
+    width: 181px;
+    height: 27px;
+    
+}
+
+@media screen and (max-width: 400px){
+    .header_icon{
+        width: 44px;
+        height: 44px;
+    }
+    .header_icon_pic{
+        visibility: hidden;
+
+    }
+    .header_information_portfolio{
+        visibility: hidden;
+    } 
+    .header_information_contact{
+       visibility: hidden;
+    }
+    .header_information_container{
+        justify-content: space-between;
+        gap:0;
+        padding: 10px 16px;
+    }
+    .profile_container{
+        display: flex;
+        flex-direction: column;
+        padding: 22px 16px;
+
+    }
+    .job_section{
+        flex-direction: column-reverse;
+        font-size: 16px;
+        align-items: flex-start;
+        padding: 10px 16px;
+    }
+
+    .personal_info{
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .personal_information_container{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding:10px 16px ;
+        align-content: center;
+    }
+    .personal_pic{
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .personal_pic_img{
+        max-width: 75px;
+        max-height: 75px;
+
+    }
+    .main_content_container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer_container{
+        flex-direction: column-reverse;
+    }
+
+    .recent_work_background_job{
+        justify-content: space-between;
+
+    }
+    .recent_work_title{
+        font-size: 16px;
+    }
+    .recent_work_title_circle{
+        width: 10px;
+
+    }
+    .header_information_about{
+        font-size: 13px;
+    }
+
+    .skills_and_projects_other_skills{
+        font-size: 14px;
+        height: 82px;
+    }
+    .skills_and_projects_best_skill{
+        font-size: 14px;
+        height: 82px;
+    }
+    .personal_info_name{
+        font-size: 24px;
+    }
+    .personal_info_job{
+        font-size: 16px;
+
+    }
+    img{
+        max-width: 238px;
+    }
+    .projects_title_style{
+        font-size: 15px;
+    }
+    .projects_description_style{
+        font-size: 12px;
+    }
+    .project_arrow_icon{
+        width: 40px;
+    }
+    .recent_work_background_active_job_title{
+        font-size: 16px;
+    }
+    .recent_work_background_job_title{
+        font-size: 16px;
+    }
+    .recent_work_background_time{
+        font-size: 15px;
+    }
+    .recent_work_section{
+        padding: 22px 20px;
+    }
+    .recent_work_background_container{
+        margin-top: 38px;
+    }
+    .projects_ai_music{
+        padding: 30px 23px;
+    }
+    .projects_ai_music_pic_container{
+        margin-top: 40px;
+    }
+    .footer_social_media_contact_container{
+        font-size: 15px;
+
+    }
+    .footer_title_left{
+        font-size: 16px;
+    }
+    .footer_container{
+        padding: 23px 40px;
+    }
+    .hire_me_button{
+        width: 85px;
+        align-content: center;
+    }
+    .copy_email_button{
+        width: 105px;
+        height: 33px;
+    }
+    .job_available_icon{
+        height: 25px;
+
+    }
+    .job_title{
+        font-size: 16px;
+
+    }
+}
