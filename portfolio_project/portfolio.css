@@ -53,6 +53,10 @@ a{
     height: 64px ;
     border-radius: 100%;
     padding: 12px;
+}
+.header_icon_pic{
+    width: 40px;
+    height: 40px;
 
 }
 .header_information_container{
@@ -70,6 +74,11 @@ a{
     color: #4134F3;
     font-weight: bold;
     align-content: center;
+}
+.header_more_icon{
+    visibility: hidden;
+    display: none;
+
 }
 .profile_container{
     height: 408.01px;
@@ -212,7 +221,9 @@ a{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(212deg, #4134F3 -55%, transparent 20%);
+      background: 
+    linear-gradient(212deg, #4134F3 -55%, transparent 20%) padding-box,
+    linear-gradient(270deg, #4134F3, transparent 1%) border-box;  
     pointer-events: none;
     z-index: 0;
     border-radius: 14px ;
@@ -311,14 +322,12 @@ a{
     
 }
 
+
 @media screen and (max-width: 400px){
     .header_icon{
         width: 44px;
         height: 44px;
-    }
-    .header_icon_pic{
-        visibility: hidden;
-
+        padding: 8px;
     }
     .header_information_portfolio{
         visibility: hidden;
@@ -342,6 +351,7 @@ a{
         font-size: 16px;
         align-items: flex-start;
         padding: 10px 16px;
+     
     }
 
     .personal_info{
@@ -443,10 +453,12 @@ a{
     }
     .footer_container{
         padding: 23px 40px;
+        gap: 6px;
     }
     .hire_me_button{
         width: 85px;
         align-content: center;
+        padding-top: 8px;
     }
     .copy_email_button{
         width: 105px;
@@ -454,10 +466,21 @@ a{
     }
     .job_available_icon{
         height: 25px;
+        padding-right: 15px
 
     }
     .job_title{
         font-size: 16px;
-
+        padding-top: 5px;
     }
+    .header_icon_pic{
+        width: 27.5px;
+        height: 27.5px;
+    }
+    .header_more_icon{
+        visibility: visible;
+        display: inherit;
+
+}
+
 }
