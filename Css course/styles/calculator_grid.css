@@ -39,13 +39,23 @@ button{
 
 }
 .container{
-    
-    width: 375px;
-    height: 812px;
+    padding: 40px;
     border-radius: 39px;
     background-color: #17181A;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+ 
     
-    
+
+}
+.calculation_showing_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
 
 }
 .calculation__resault{
@@ -56,8 +66,9 @@ button{
     text-align: start;
     /* position: relative; */
 
-    margin-left: 180px;   
+   
 }
+
 
 .calculation__showing{
     color: #818181;
@@ -66,14 +77,14 @@ button{
     text-align: top;
     /* position: relative; */
     margin-top: 138px;
-    margin-left: 167px;
+
 
 }
 .calculation__operators{
     color: #109DFF;
 }
 .top__buttons__container{
-    margin-top: 100px;
+    margin-top: 52px;
   
 }
 .top__buttons{
@@ -177,4 +188,8 @@ button:not(.blue_buttons):not(.equal_button):hover{
 }
 .equal_button:hover{
     background-color: #136cbe;;
+}
+
+.visibile{
+    visibility: hidden;
 }
