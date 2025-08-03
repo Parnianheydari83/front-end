@@ -22,6 +22,11 @@ a{
     text-decoration: none;
     color: white;
 }
+button{
+    border: none;
+    background: none;
+}
+
 
 .container{
     width: auto;
@@ -319,6 +324,10 @@ a{
     width: 181px;
     height: 27px;
     
+}
+
+.copy_email_button:hover{
+    cursor: pointer;
 }
 
 

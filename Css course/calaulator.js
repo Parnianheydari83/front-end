@@ -22,7 +22,7 @@ const deleteButton = document.getElementById('delete_button');
 const calculationResultElement = document.getElementById('calculation_result');
 const calculationShowingElement = document.getElementById('calculation_show');
 const numbersArray = ['1','2','3','4','5','6','7','8','9'];
-const operatorsArray = ['+','-','*','/']
+const operatorsArray = ['+','-','*','/','.']
 
 
 
@@ -34,7 +34,7 @@ function show_result(){
 
 function addKeyToCalculation(key){
     if( (operatorsArray.includes(key) &&  operatorsArray.includes(currentCalculation[currentCalculation.length -1])
-        || (operatorsArray.includes(key) && (currentCalculation.length) === 0)
+        || (operatorsArray.includes(key) && (currentCalculation.length) === 0 && key !== '-')
     )){
         return;
     }
@@ -44,15 +44,23 @@ function addKeyToCalculation(key){
 function deleteKeyFromCalculation(){
     if (currentCalculation.length){
         currentCalculation.pop();
+        if (currentCalculation.length===0){
+            calculationShowingElement.textContent = 'null'
+            return
+        }
         show_result();
-    }
-    return
+    }else
+        return
+    
+    
 }
 function calculation(){
+    if(currentCalculation.length){
     let calculationString = currentCalculation.join('');
     let result = eval(calculationString);
     calculationResultElement.textContent = '= ' + result; 
     currentCalculation.splice(0);
+    }
 
 }
 
